@@ -3,7 +3,8 @@ https://nestrovick.github.io/LOJA_I-TEM-TUDO/
 
 # I-TEM TUDO
 
-![logo_fundo](https://github.com/Nestrovick/LOJA_I-TEM-TUDO/assets/118445657/0cfbb355-1a67-4c13-a4a6-b5f47f06502d)
+![logo_fundo](https://github.com/Nestrovick/LOJA_I-TEM-TUDO/assets/118445657/5fc489c6-ebe3-4314-bcf1-c56314649d65)
+
 
 
 ## Descrição
@@ -33,4 +34,5 @@ Este projeto é um site de vendas funcional desenvolvido como parte da disciplin
   - [jQuery](https://jquery.com/)
   - [Slick Carousel](https://kenwheeler.github.io/slick/)
 
-![image](https://github.com/Nestrovick/LOJA_I-TEM-TUDO/assets/118445657/9b530d0e-03f9-4e09-afbb-446a2f2535e1)
+![image](https://github.com/Nestrovick/LOJA_I-TEM-TUDO/assets/118445657/c158c449-6c47-4070-aa3b-304df3b6b835)
+
