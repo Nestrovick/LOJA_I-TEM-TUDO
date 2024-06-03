@@ -368,7 +368,7 @@ const btnFinalizarCompras = document.querySelector("#btnFinalizarCarrinho")
 btnFinalizarCompras.addEventListener("click", function () {
   Swal.fire({
     title: 'Me Desculpa?',
-    text: 'A melhor parte que é de receber ainda não fiz vagabundos!',
+    text: 'A melhor parte que é de receber ainda está em fase de desenvolvimento!',
     confirmButtonColor: "#DD6B55",
     icon: 'question'
   })
