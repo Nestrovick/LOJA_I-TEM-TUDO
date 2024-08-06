@@ -26,6 +26,11 @@ Este projeto é um site de vendas funcional desenvolvido como parte da disciplin
 - **HTML**
 - **CSS**
 - **JavaScript**
+**Bibliotecas e Frameworks**:
+  - [ScrollReveal](https://scrollrevealjs.org/)
+  - [Ionicons](https://ionicons.com/)
+  - [jQuery](https://jquery.com/)
+  - [Slick Carousel](https://kenwheeler.github.io/slick/)
 
 ![image](https://github.com/Nestrovick/LOJA_I-TEM-TUDO/assets/118445657/c158c449-6c47-4070-aa3b-304df3b6b835)
 
