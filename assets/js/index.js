@@ -1,18 +1,17 @@
 /************* NAVIGATION BAR **************/
 window.addEventListener("scroll", function () {
-
   var header = document.querySelector("nav");
-  header.classList.toggle("menu-scroll", window.scrollY > 0)
-})
+  header.classList.toggle("menu-scroll", window.scrollY > 0);
+});
 
 // CARROSSEL PRODUTOS EM DESTAQUES
 $('.carrossel').slick({
   prevArrow: '.slick-prev-one',
   nextArrow: '.slick-next-one',
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 1000,
   infinite: true,
-  speed: 300,
+  speed: 1500,
   slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
@@ -55,87 +54,97 @@ $('.carrossel').slick({
   ]
 });
 
-
+// Show div on button click
 $('button').on('click', function () {
   $('#divId').show(); 
-
 });
 
+// Dark mode functionality
 const chageThemeBtn = document.querySelector("#chenge-theme");
 
 function toggleDarkMode() {
-  document.body.classList.toggle("dark")
+  document.body.classList.toggle("dark");
 }
 
 function loadTheme() {
   const darkMode = localStorage.getItem("dark");
-
   if (darkMode) {
     toggleDarkMode();
   }
 }
 
-loadTheme()
+loadTheme();
 
 chageThemeBtn.addEventListener("change", function () {
-  toggleDarkMode()
-
+  toggleDarkMode();
   localStorage.removeItem("dark");
-
   if (document.body.classList.contains("dark")) {
     localStorage.setItem("dark", 1);
   }
-
 });
 
+// Toggle element display
 function Mudarestado(el) {
   let display = document.getElementById(el).style.display;
-  if (display == "none")
+  if (display == "none") {
     document.getElementById(el).style.display = 'block';
-  else
+  } else {
     document.getElementById(el).style.display = 'none';
+  }
 }
+
 feather.replace();
 
+// Cart functionality
 function scrollCart() {
-
   let cartItem = document.querySelector('.cardCarrinho-container');
   document.querySelector('#cart-btn').onclick = () => {
     cartItem.classList.toggle('active');
-
-  }
+  };
   window.onscroll = () => {
     cartItem.classList.remove('active');
-  }
+  };
 }
-scrollCart()
+scrollCart();
 
+// User login functionality
 function loggedinuser() {
   window.addEventListener('load', () => {
-    let email = localStorage.getItem('userLogado')
-
+    let email = localStorage.getItem('userLogado');
     document.getElementById('user-email').innerHTML = email === null
       ? '<div class="configs-menu"><a href="login-page.html"><i class="fa-solid fa-user fas"></i></a> </div>'
-      : `'<a><i class="fa-solid fa-user fas"></i></a>'
-      
-      `
-  })
-
-
+      : `<a><i class="fa-solid fa-user fas"></i></a>`;
+  });
 }
-loggedinuser()
+loggedinuser();
+
 const sair = () => {
-  localStorage.removeItem('userLogado')
-  window.location.href = ''
-}
+  localStorage.removeItem('userLogado');
+  window.location.href = '';
+};
 
 $(document).ready(() => {
-  let texto = localStorage.getItem('userLogado') ? "<li onclick='sair()'><p> sair </p></li>" : ''
+  let texto = localStorage.getItem('userLogado') ? "<li onclick='sair()'><p> sair </p></li>" : '';
   $('#li-sair').css({
     width: '100%',
     marginLeft: '10%'
-  })
-  $('#li-sair').html(texto)
+  });
+  $('#li-sair').html(texto);
+});
 
-})
+// Search functionality
+document.getElementById('search-input').addEventListener('input', function () {
+  let query = this.value.toLowerCase();
+  let items = document.querySelectorAll('.product-item');
 
+  items.forEach(item => {
+    let title = item.querySelector('h1').textContent.toLowerCase();
+    let price = item.querySelector('h4').textContent.toLowerCase();
+
+    if (title.includes(query) || price.includes(query)) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+});

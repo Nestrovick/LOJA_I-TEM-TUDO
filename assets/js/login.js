@@ -20,7 +20,6 @@ class Conta {
     // Sistema de verificação com Alert personalizado
     approved(email) {
         Swal.fire({
-            position: 'top-end',
             icon: 'success',
             title: 'login aprovado, você será redirecionado(a) à tela inicial',
             showConfirmButton: false,
@@ -62,3 +61,19 @@ document.querySelector('#senha').value
 const limparInput = () => {
     document.querySelector('#senha').value = ''
 }
+
+document.getElementById('toggleSenha').addEventListener('click', function () {
+    const senhaInput = document.getElementById('senha');
+    const senhaIcon = this.querySelector('i');
+    
+    if (senhaInput.type === 'password') {
+        senhaInput.type = 'text';
+        senhaIcon.classList.remove('fa-eye-slash'); 
+        senhaIcon.classList.add('fa-eye');
+    } else {
+        senhaInput.type = 'password';
+        senhaIcon.classList.remove('fa-eye');
+        senhaIcon.classList.add('fa-eye-slash');
+    }
+});
+

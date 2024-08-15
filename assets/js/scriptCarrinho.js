@@ -2,131 +2,188 @@
 //objeto literal dos produtos que o site possui
 const products = {
   0: {
-    nome: 'Apple Iphone 11',
+    nome: 'Monitor AOC',
     desc: 'Muito Utilizado no seu dia a dia...',
-    valor: 3320.0,
-    img: '<img src="assets/img/projects/iphone.png">',
+    valor: 899.99,
+    img: '<img src="assets/img/projects/monitoraoc.png">',
     qtd: 1
   },
 
   1: {
-    nome: "Controle Xbox",
-    desc: "Muito Utilizado em VideoGame, Pc...",
-    valor: 290.0,
-    img: '<img src="assets/img/projects/console.png">',
+    nome: "Nike Air Force 1",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 999.99,
+    img: '<img src="assets/img/projects/nikeair1.png">',
     qtd: 1
   },
 
   2: {
-    nome: "Headset Gamer",
-    desc: "Muito Utilizado para jogos de fps...",
-    valor: 349.99,
-    img: '<img src="assets/img/projects/headphone1.png">',
+    nome: "Iphone 15 Pro",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 6799.99,
+    img: '<img src="assets/img/projects/Iphone15pro.png">',
     qtd: 1
   },
 
   3: {
-    nome: "Air Jordan",
+    nome: "Smartwatch",
     desc: "Muito Utilizado no seu dia dia...",
-    valor: 329.99,
-    img: '<img src="assets/img/projects/nike-jordan.png">',
+    valor: 379.99,
+    img: '<img src="assets/img/projects/smartwatch.png">',
     qtd: 1
   },
 
   4: {
-    nome: "Xiaomi Mi Band",
+    nome: "Meta Oculus Quest 3",
     desc: "Muito Utilizado no seu dia a dia...",
-    valor: 169.99,
-    img: '<img src="assets/img/projects/relógio.png">',
+    valor: 4097.00,
+    img: '<img src="assets/img/projects/metaquest3.png">',
     qtd: 1
   },
 
   5: {
-    nome: "Nutriwhey",
-    desc: "Muito Utilizado no seus treinos...",
-    valor: 48.49,
-    img: '<img src="assets/img/projects/whey.png">',
+    nome: "Puma Suede Skate",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 339.90,
+    img: '<img src="assets/img/projects/pumaskate.png">',
     qtd: 1
   },
 
   6: {
-    nome: "Slant Summer",
+    nome: "Teclado Gamer Logitech G213",
     desc: "Muito Utilizado no seu dia a dia...",
-    valor: 131.19,
-    img: '<img src="assets/img/projects/tenis-masc.png">',
+    valor: 398.06,
+    img: '<img src="assets/img/projects/tecladogamer.png">',
     qtd: 1
   },
 
   7: {
-    nome: "Philco Smart TV",
-    desc: "Muito Utilizado na sua casa...",
-    valor: 1399.00,
-    img: '<img src="assets/img/projects/Philco-Tv.png">',
+    nome: "Mouse Gamer Logitech G502",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 421.58,
+    img: '<img src="assets/img/projects/g502.png">',
     qtd: 1
   },
 
   8: {
-    nome: "Alexa Echo Dot",
-    desc: "Muito Utilizado no seu quarto...",
-    valor: 379.05,
-    img: '<img src="assets/img/projects/alexa.png">',
+    nome: 'Air Pods 3 Pro',
+    desc: 'Muito Utilizado no seu dia a dia...',
+    valor: 1599.99,
+    img: '<img src="assets/img/projects/airpods.png">',
     qtd: 1
   },
-  
+
+  9: {
+    nome: "Garrafa Térmica",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 65.00,
+    img: '<img src="assets/img/projects/garrafa.png">',
+    qtd: 1
+  },
+
+  10: {
+    nome: "Impressora",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 899.99,
+    img: '<img src="assets/img/projects/impressora.png">',
+    qtd: 1
+  },
+
+  11: {
+    nome: "Churrasqueira",
+    desc: "Muito Utilizado no seu dia dia...",
+    valor: 199.99,
+    img: '<img src="assets/img/projects/churrasqueira.png">',
+    qtd: 1
+  },
+
+  12: {
+    nome: "Telefone Escritório",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 210.00,
+    img: '<img src="assets/img/projects/telefone.png">',
+    qtd: 1
+  },
+
+  13: {
+    nome: "Fechadura Eletrônica",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 799.99,
+    img: '<img src="assets/img/projects/fechadura.png">',
+    qtd: 1
+  },
+
+  14: {
+    nome: "Perfume 212 Vip",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 199.99,
+    img: '<img src="assets/img/projects/perfume.png">',
+    qtd: 1
+  },
+
+  15: {
+    nome: "Switch de Rede 8 Portas",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 210.00,
+    img: '<img src="assets/img/projects/switch-de-rede.png">',
+    qtd: 1
+  },
+
+
   20: {
-    nome: "Notebook HP",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 3149.10,
-    img: '<img src="assets/img/pag-produtos/Notebook.png">',
+    nome: "Lava Louças 14 serviços",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 4324.70,
+    img: '<img src="assets/img/pag-produtos/lavalouças.png">',
     qtd: 1
   },
   21: {
-    nome: "playstation-5",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 3998.90,
-    img: '<img src="assets/img/pag-produtos/playstation-5_qjz1.png">',
+    nome: "Cama King Size",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 2799.00,
+    img: '<img src="assets/img/pag-produtos/cama.png">',
     qtd: 1
   },
   22: {
-    nome: "Pc Gamer Computador",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 2472.96,
-    img: '<img src="assets/img/pag-produtos/Pc-Gamer-Computador-PNG.png">',
+    nome: "Camisa Social",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 69.00,
+    img: '<img src="assets/img/pag-produtos/blusa.png">',
     qtd: 1
   },
   23: {
-    nome: "Camera de Segurança",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 832.05,
-    img: '<img src="assets/img/pag-produtos/Camera-De-Segurança.png">',
+    nome: "Alto Falante",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 699.99,
+    img: '<img src="assets/img/pag-produtos/altofalante.png">',
     qtd: 1
   },
   24: {
-    nome: "Drone DJI FPV",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 1057.00,
-    img: '<img src="assets/img/pag-produtos/Drone.png">',
+    nome: "Console Nitendo Switch",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 1847.75,
+    img: '<img src="assets/img/pag-produtos/nitendoswitch.png">',
     qtd: 1
   },
   25: {
-    nome: "SMARTPHONE GAMER",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 9719.19,
-    img: '<img src="assets/img/pag-produtos/smartphone-mobile.png">',
+    nome: "Secador de Cabelo",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 110.00,
+    img: '<img src="assets/img/pag-produtos/secadordecabelo.png">',
     qtd: 1
   },
   26: {
-    nome: "Carregador Veicular",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 8307.31,
-    img: '<img src="assets/img/pag-produtos/Carregador_Veicular.png">',
+    nome: "Pc Gamer",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 5275.00,
+    img: '<img src="assets/img/pag-produtos/pcgamer.png">',
     qtd: 1
   },
   27: {
-    nome: "Robô Aspirador de Pó",
-    desc: "Muito Utilizado em tecnologias avançadas..",
-    valor: 599.00,
-    img: '<img src="assets/img/pag-produtos/robot_unee_side_1.png">',
+    nome: "Webcam Full HD",
+    desc: "Muito Utilizado no seu dia a dia...",
+    valor: 399.99,
+    img: '<img src="assets/img/pag-produtos/webcan.png">',
     qtd: 1
   },
 
@@ -187,7 +244,7 @@ document.querySelector('body').addEventListener('click', ({
         } else {
           Swal.fire({
             title: produto.nome,
-            text: 'produto ja foi adicionado no Carrinho',
+            text: 'Já foi adicionado ao carrinho',
             confirmButtonColor: "#DD6B55",
 
           })

@@ -43,7 +43,7 @@
                             <br><br>
                             Loge-se agora e receba <b>&nbsp;10% de desconto</b>
                             <br>
-                            na sua primeira compra
+                            em todos os produtos na sua primeira compra
                         </h3>
 
                         <div class="login-medias-socials">
@@ -69,31 +69,34 @@
                 <section>
                     <div id="cadastroID">
                         <h1>Cadastro</h1>
-
-
+                
                         <div class="sign-in">
                             <input id="email" type="email" name="email" class="email" placeholder="E-mail" required>
-                            <input id="senha" type="password" name="password" class="password" placeholder="Senha"
-                                required>
-                            <input id="rSenha" type="password" name="password" class="password"
-                                placeholder="Confirmar senha" required>
+                
+                            <div class="password-wrapper">
+                                <input id="senha" type="password" name="password" class="password" placeholder="Senha" required>
+                                <button type="button" id="toggleSenha" class="toggle-password">
+                                    <i class="fa fa-eye-slash"></i> <!-- Ícone do "olhinho" -->
+                                </button>
+                            </div>
+                
+                            <div class="password-wrapper">
+                                <input id="rSenha" type="password" name="password" class="password" placeholder="Confirmar senha" required>
+                            </div>
                         </div>
                     </div>
-
+                
                     <div class="btn-Cadastrar">
-
-                        <input style="margin-top: 50px;" type="button" id="register-btn" class="btn-all"
-                            value="Cadastrar" />
+                        <input style="margin-top: 100px;" type="button" id="register-btn" class="btn-all" value="Cadastrar" />
                     </div>
-
+                
                     <div class="voltar-Cadrasto">
                         <a href="login-page.html" id="registrar-pagina-login">
-                            <p>Já tenho um login?</p>
+                            <p style="font-size: 18px;">Já tenho um login?</p>
                         </a>
                     </div>
-
-
-                </section>
+                </section>                
+                
             </form>
 
         </div>

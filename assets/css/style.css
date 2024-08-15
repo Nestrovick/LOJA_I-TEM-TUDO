@@ -460,6 +460,17 @@ header {
   background-color: var(--secundary-background);
   border-radius: 10px;
   gap: 10px;
+  outline: none;
+  padding: 10px; 
+  border: none; 
+}
+
+.box:hover {
+  transform: scale(1.15); 
+}
+
+.box p {
+  margin: 0;
 }
 
 .box div {
