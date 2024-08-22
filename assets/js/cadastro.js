@@ -80,7 +80,7 @@ document.querySelector('#register-btn').addEventListener('click', () => {
         if (bd.verifyAccounts(conta)) {
             bd.save(conta)
             limparInputs(3)
-            // Alert Personalizado
+            // Alerta Personalizado
             Swal.fire({
                 icon: 'success',
                 title: 'Cadastro realizado com sucesso',

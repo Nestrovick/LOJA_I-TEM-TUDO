@@ -379,14 +379,13 @@ const adicionarQtd = (id, qtd) => {
     reajustarObjeto(cart)
   } else {
     Swal.fire({
-      title: 'Quer comprar minha loja toda não ?',
+      title: 'Devido à nossa incrível promoção de 10% de desconto em todos os produtos, limitamos a compra a apenas 2 unidades por item. Aproveite o desconto enquanto dura!',
       width: 600,
       padding: '3em',
       color: '#E63946',
-      background: '#fff url(/images/trees.png)',
+      background: '#fff ',
       backdrop: `
         rgba(#E63946)
-        url("/images/nyan-cat.gif")
         left top
         no-repeat
       `,

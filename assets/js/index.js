@@ -1,4 +1,4 @@
-/************* NAVIGATION BAR **************/
+/************* Navegação bar **************/
 window.addEventListener("scroll", function () {
   var header = document.querySelector("nav");
   header.classList.toggle("menu-scroll", window.scrollY > 0);
@@ -54,12 +54,12 @@ $('.carrossel').slick({
   ]
 });
 
-// Show div on button click
+// Mostrar div ao clicar no botão
 $('button').on('click', function () {
   $('#divId').show(); 
 });
 
-// Dark mode functionality
+// Funcionalidade do modo escuro
 const chageThemeBtn = document.querySelector("#chenge-theme");
 
 function toggleDarkMode() {
@@ -83,7 +83,7 @@ chageThemeBtn.addEventListener("change", function () {
   }
 });
 
-// Toggle element display
+// Alternar exibição dos elementos
 function Mudarestado(el) {
   let display = document.getElementById(el).style.display;
   if (display == "none") {
@@ -95,7 +95,7 @@ function Mudarestado(el) {
 
 feather.replace();
 
-// Cart functionality
+// Funcionalidade do carrinho
 function scrollCart() {
   let cartItem = document.querySelector('.cardCarrinho-container');
   document.querySelector('#cart-btn').onclick = () => {
@@ -107,7 +107,7 @@ function scrollCart() {
 }
 scrollCart();
 
-// User login functionality
+// Usuario login funcionalidade
 function loggedinuser() {
   window.addEventListener('load', () => {
     let email = localStorage.getItem('userLogado');
@@ -132,7 +132,7 @@ $(document).ready(() => {
   $('#li-sair').html(texto);
 });
 
-// Search functionality
+// Funcionalidade de pesquisa
 document.getElementById('search-input').addEventListener('input', function () {
   let query = this.value.toLowerCase();
   let items = document.querySelectorAll('.product-item');
@@ -148,3 +148,4 @@ document.getElementById('search-input').addEventListener('input', function () {
     }
   });
 });
+

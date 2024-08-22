@@ -17,7 +17,7 @@ class Conta {
             }
         }
     }
-    // Sistema de verificação com Alert personalizado
+    // Sistema de verificação com Alerta personalizado
     approved(email) {
         Swal.fire({
             icon: 'success',
