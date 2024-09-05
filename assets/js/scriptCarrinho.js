@@ -240,13 +240,23 @@ document.querySelector('body').addEventListener('click', ({
         })
 
         if (!possui) { 
-          cart[id] = produto
+          cart[id] = produto;
+
+          Swal.fire({
+            title: produto.nome,
+            text: 'Produto adicionado ao carrinho com sucesso!',
+            icon: 'success',
+            confirmButtonColor: "#3085d6",
+            timer: 2000,
+            showConfirmButton: false
+          });
         } else {
           Swal.fire({
             title: produto.nome,
-            text: 'Já foi adicionado ao carrinho',
+            text: 'Este produto já está no seu carrinho!',
             confirmButtonColor: "#DD6B55",
-
+            icon: 'info',
+            showConfirmButton: true
           })
         }
 
@@ -299,9 +309,9 @@ const getText = (id, {
     </header>
     <li>
       
-        <button class="btn plus" onclick="adicionarQtd(${id}, ${qtd})"> + </button>
+        <button class="btn plus" onclick="removerQtd(${id}, ${qtd})"> - </button>
         <p> ${qtd} </p>
-        <button class="btn minus" onclick="removerQtd(${id}, ${qtd})"> - </button>
+        <button class="btn minus" onclick="adicionarQtd(${id}, ${qtd})"> + </button>
       
     </li>
     <section>
@@ -438,4 +448,6 @@ const removerFromCart = id => {
   reajustarObjeto(cart)
   setarValores(id)
 }
+
+
 
