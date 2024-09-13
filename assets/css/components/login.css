@@ -65,6 +65,23 @@ body {
     margin-left: 40px;
 }
 
+.error-message {
+    background-color: var(--important-color);
+    color: white; /* Texto branco */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaço entre o campo de e-mail e a mensagem */
+    margin-bottom: 10px; /* Espaço entre a mensagem e o campo abaixo */
+    font-size: 14px;
+    text-align: center; /* Centraliza o texto */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.btn-all:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
 .login-medias-socials a {
 
     width: 40px;

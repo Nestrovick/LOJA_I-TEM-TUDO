@@ -24,15 +24,11 @@
     <section class="login-page">
 
         <div class="login-container">
-
             <div class="login-register" id="img-login-register">
-
                 <section>
                     <h1><b>I</b>-Tem de Tudo</h1>
-
                     <!-- REGISTRO DE NOVO USURÁIO -->
                     <div class="register" id="reg">
-
                         <h3>
                             Ainda não é nosso cliente?
                             <br><br>
@@ -40,34 +36,27 @@
                             <br>
                             em todos os produtos na sua primeira compra
                         </h3>
-
                         <div class="login-medias-socials">
                             <a href="https://github.com/Nestrovick" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://instagram.com/Nestrovick_10" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/in/danilo-nestrovick/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://instagram.com/Nestrovick_10" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         </div>
-
                         <button class="btn-all" onclick="location.href = 'register-page.html'"
                             style="margin-left: 40px; margin-top: 30px;">
                             <p>Cadastrar</p>
                         </button>
-
                     </div>
                 </section>
-
             </div>
-
 
             <!-- LOGIN -->
             <form class="login-sign-in" id="chenge-theme">
-
                 <section>
                     <div id="loginID">
                         <h1>Login</h1>
-                
                         <div class="sign-in">
                             <input id="email" type="email" name="email" class="email" placeholder="E-mail" required>
-                
+                            <div id="email-error" class="error-message" style="display: none;">Preencha corretamente o campo e-mail</div>
                             <div class="password-wrapper">
                                 <input id="senha" type="password" name="password" class="password" placeholder="Senha" required>
                                 <button type="button" id="toggleSenha" class="toggle-password">
@@ -76,11 +65,9 @@
                             </div>
                         </div>
                     </div>
-                
                     <div class="btnLogin">
-                        <input id="login-btn" type="button" class="btn-all" value="Entrar" />
+                        <input id="login-btn" type="button" class="btn-all" value="Entrar" disabled/>
                     </div>
-                
                     <div>
                         <a href="register-page.html" id="registrar-pagina-login">
                             <p>Não tem uma conta?</p>

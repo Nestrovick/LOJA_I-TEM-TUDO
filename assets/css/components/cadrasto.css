@@ -223,6 +223,13 @@ input:focus {
     font-size: 14px;
 }
 
+/* Estilo do botão desabilitado */
+.btn-all:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
 .register>input:hover,
 .login-sign-in>input:hover {
     cursor: pointer;

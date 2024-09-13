@@ -325,11 +325,11 @@ const getText = (id, {
 const setTotal = (total) => document.querySelector('.total').innerHTML = total * 0.9 > 0
   ?
   `
-  <h2>Subtotal: <b>${formatarValorRS((total * 0.9))}</b> </h2>
+  <h2>Valor Final: <b>${formatarValorRS((total * 0.9))}</b> </h2>
 `
   :
   `
-  <h2>Subtotal: NENHUM ITEM ESCOLHIDO </h2>
+  <h2>Valor Final: NENHUM ITEM ESCOLHIDO </h2>
 `
 const getTotal = ({ valor, qtd }) => valor * qtd
 
