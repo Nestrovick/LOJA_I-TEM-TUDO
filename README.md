@@ -21,6 +21,8 @@ Este projeto é um site de vendas funcional desenvolvido como parte da disciplin
 
 5- Carrinho de Compras: Exibe todos os produtos que foram selecionados pelo usuário, permitindo a revisão dos itens antes da finalização da compra.
 
+6- Modo Claro/Escuro (Light/Dark Mode): Oferece a opção de alterar o tema do site, proporcionando uma melhor experiência visual ao usuário.
+
 ## Tecnologias Utilizadas
 
 - **HTML**
